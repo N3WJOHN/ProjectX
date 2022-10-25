@@ -1,4 +1,4 @@
-## Project X: Continuous Integration with Jenkins by New John Roberton Refuse
+## Project X: Continuous Integration with Jenkins by John Roberton
 
 Overview:
 
