@@ -5,7 +5,7 @@ Overview:
 Continuous integration solves communication issues, and the constant codes being pushed to the central repository. And the codes or the code gets merged into the centralized repository on a regular basis. And days past, weeks past, sometimes even months pass. The code keep getting merged. And then after some time, if the code is together built and tested, it generates a lot of bugs, issues. With CI it allows us to build and test automatically.
  In this project have made used of terraform to provision my jenkins, nexus and sonar servers. Jenkins for the continuous integration pipeline, git to pull the codes from github, maven for the build, Nexus as the repository for the artifacts, sonarqube to analyze the code along side with checkstyle. Many plug ins were integrated that I will describe in details later on. The most crucial part about this project is that the pipeline was done as a code and not manually. To receives the notifications I used slack and integrated slack notifications through jenkins. 
  
- ## Project X: Continuous Integration with Jenkins by New John Roberton Refuse
+ ## 1. Servers setup
 - Setting up jenkins with terraform : https://github.com/N3WJOHN/ProjectX/tree/main/T/jenkins-server-terraform
 - Setting up jenkins manually: 
 - Launch an ec2 instance with these configurations
@@ -208,4 +208,15 @@ sleep 30
 reboot
 ```
 
+ ## 2. Once logging in all the servers above install the following plugins inside your jenkins
+ - Nexus artifact
+ - Sonarqube scanner
+ - Git
+ - Build timestamp
+ - Pipeline maven
+ - Pipeline utility steps
+ - Slack notification
+ 
 
+   
+  
